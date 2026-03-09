@@ -1,0 +1,154 @@
+{
+  "queries": [
+    {
+      "query": "Overall survival differences in gastric neoplasms with neuroendocrine carcinoma components versus adenocarcinoma at Peking University Cancer Hospital.",
+      "expected_id": "2805",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "\"Prospective study on leukotriene receptor antagonists for colorectal cancer chemoprevention using aberrant crypt foci as biomarkers.\"",
+      "expected_id": "7346",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "\"Heart rate variability as a prognostic indicator for survival in primary colorectal cancer patients at VUmc, published August 2023.\"",
+      "expected_id": "2040",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "\"Multi-omics analysis of colon cancer patient networks reveals treatment outcome variability based on mRNA expression differences.\"",
+      "expected_id": "1316",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "\"Prognostic correlation of nucleosome assembly protein like NAP1L1 expression in human colorectal cancer samples with APC inactivation.\"",
+      "expected_id": "2957",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "High-throughput screening of compounds inhibiting IL-1 secretion from iPSC-derived macrophages in a patient with NOMID and NLRP3 inflammasome activation.",
+      "expected_id": "7556",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "Colorectal cancer incidence in China is rising due to obesity; how does traditional Chinese medicine enhance chemotherapy effects?",
+      "expected_id": "7483",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "Clostridium perfringens type C causing severe diarrhea in piglets and its impact on growth and economic losses in the pig industry.",
+      "expected_id": "4963",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "Impact of SARS-CoV-2 on patients with colon cancer during the COVID-19 pandemic at a major healthcare institution.",
+      "expected_id": "4504",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "\"Effects of cancer screenings on cardiovascular health measures in patients from the American Heart Association registry.\"",
+      "expected_id": "6040",
+      "diagnosis": "Colon_Cancer"
+    },
+    {
+      "query": "Inhibition of NQO1 enzyme activity in CL1-1 and CL1-5 lung cancer cells using sulindac and dicoumarol.",
+      "expected_id": "821",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"Quality improvement in multidisciplinary teams for lung cancer care at [Institution Name] showed significant rise in excellent information ratings from 53% to 59%.\"",
+      "expected_id": "2096",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "Lymphatic metastasis patterns in liver carcinoma related to inferior vena cava and hepatic lymph nodes in a lung cancer patient.",
+      "expected_id": "3759",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "the effectiveness of quality improvement plans in lung cancer management in a clinical setting.",
+      "expected_id": "3950",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "Gene-based lung cancer risk estimation as a smoking cessation motivator in NHS primary care unit subjects.",
+      "expected_id": "2124",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"Assessment of disease-free survival in lung cancer patients monitored bi-monthly for 6 months post-chemotherapy at a cancer treatment center.\"",
+      "expected_id": "2112",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"advanced non-small cell lung cancer survival rates stage IIIb 5% stage IV less than 1% treatment options molecular changes\"",
+      "expected_id": "955",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"Impact of next-generation Ion Torrent sequencing on identifying lung cancer mutations for personalized therapy development.\"",
+      "expected_id": "6861",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"TFP exposure effects on LysoTracker retention and cytotoxicity in SCLC versus NSCLC cell lines, including H82 and U-1810.\"",
+      "expected_id": "3766",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "Sulindac's role in promoting apoptosis in lung cancer patients through prostaglandin synthesis inhibition and its FDA approval status.",
+      "expected_id": "3846",
+      "diagnosis": "Lung_Cancer"
+    },
+    {
+      "query": "\"Pathogenic variants in DNA damage response genes in early-onset renal cancer patients undergoing risk assessment\"",
+      "expected_id": "4137",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "26-year-old Sudanese woman with vitamin D deficiency, recurrent nasal polyps, back pain, and chronic fatigue.",
+      "expected_id": "6155",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "Genomic analysis of intraductal papillary mucinous neoplasms and mucinous cystic neoplasms in patients reveals mutations linked to pancreatic cancer progression.",
+      "expected_id": "6181",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "\"Review on the role of AMPK signaling in hyperactive MAPK pathways and its implications for thyroid cancer therapies.\"",
+      "expected_id": "4085",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "Pralatrexate's effects on neuroblastoma cell lines and its comparison to methotrexate in high-risk pediatric cases.",
+      "expected_id": "2743",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "66-year-old woman with spinal cord injury, refractory sacral pressure sore, malnutrition, and elevated alkaline phosphatase levels.",
+      "expected_id": "6079",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "50-year-old male with solitary plasmacytoma of the skull treated with occipital craniotomy and lower trapezius myocutaneous flap transplantation.",
+      "expected_id": "1517",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "Neurologic manifestations and sleep disorders in patients with thyroid cancer at the University of Virginia.",
+      "expected_id": "4556",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "Comparison of absorbed dose calculation techniques in peptide receptor radionuclide therapy for thyroid cancer at Azienda Unitaria Sanitaria Locale di Reggio Emilia.",
+      "expected_id": "5780",
+      "diagnosis": "Thyroid_Cancer"
+    },
+    {
+      "query": "Serum MMP2 and MMP9 levels before and after ultrasound-guided radiofrequency ablation in 41 papillary thyroid carcinoma patients.",
+      "expected_id": "4546",
+      "diagnosis": "Thyroid_Cancer"
+    }
+  ]
+}
