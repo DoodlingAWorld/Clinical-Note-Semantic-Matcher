@@ -17,3 +17,23 @@ NOTE: The dataset was last updated 4 years ago. This is just a learning project 
 Sample input: ![img_1.png](images/img_1.png)
 
 Sample output: ![img_2.png](images/img_2.png)
+
+## Evaluation Results of Hybrid Search Trial
+
+| Phase | Method | MRR |                                                                                                                                                                                                                                                                                                                                                                                                        
+  |---|---|---|
+| Phase 1 | Dense only (PubMedBERT, cosine) | 0.3032 |                                                                                                                                                                                                                                                                                                                                                                          
+| Phase 2 | Hybrid BM25 + PubMedBERT (alpha=0.75) | 0.3206 |                                                                                                                                                                                                                                                                                                                                                                    
+
+### Key Finding
+Pure keyword search (BM25 alone, alpha=0.0) scored 0.2999, worse than pure semantic
+(0.3014). Medical literature rewards semantic understanding over exact keyword matching.                                                                                                                                                                                                                                                                                                                                        
+However, a small BM25 contribution (alpha=0.75) recovers failures on exact technical                                                                                                                                                                                                                                                                                                                                            
+identifiers like gene names (NAP1L1), protein abbreviations (IL-1), and proprietary                                                                                                                                                                                                                                                                                                                                             
+technology names (Ion Torrent) that dense vectors blur together semantically.
+
+The evaluation dataset was auto-generated using gpt-4o-mini: each test query was                                                                                                                                                                                                                                                                                                                                                
+grounded in unique details from a specific document, ensuring queries are document-specific                                                                                                                                                                                                                                                                                                                                     
+rather than generic. 
+
+MRR measures average reciprocal rank of the correct document across 50 test queries.
