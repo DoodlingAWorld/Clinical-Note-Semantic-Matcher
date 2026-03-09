@@ -2,6 +2,7 @@ import streamlit as st
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
 from pinecone_text.sparse import BM25Encoder
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 
@@ -11,8 +12,7 @@ st.set_page_config(page_title="BioMedical AI Search", page_icon="🧬", layout="
 
 st.title("🧬 Medical Literature Semantic Search")
 st.markdown("""
-Welcome to the Clinical Discovery Engine. This tool searches through clinical text using a
-**hybrid PubMedBERT + BM25 engine**, attempting blending semantic understanding with exact keyword matching.
+Clinical Discovery Engine — hybrid PubMedBERT + BM25 retrieval with GPT-4o-mini synthesis.
 """)
 
 
@@ -35,16 +35,55 @@ def init_pinecone():
 
 
 def hybrid_scale(dense: list, sparse: dict, alpha: float) -> tuple:
-    """
-    Scale dense and sparse vectors by alpha.
-    alpha=1.0 -> pure semantic  |  alpha=0.0 -> pure keyword
-    """
+    """Scale dense by alpha and sparse by (1-alpha) before querying."""
     hsparse = {
         "indices": sparse["indices"],
         "values": [v * (1 - alpha) for v in sparse["values"]],
     }
-    hdense = [v * alpha for v in dense]
-    return hdense, hsparse
+    return [v * alpha for v in dense], hsparse
+
+
+def get_rag_answer(query: str, matches: list) -> str:
+    """
+    Feed the retrieved documents to GPT-4o-mini and return a synthesized answer.
+
+    The prompt constrains the LLM to ONLY use the provided documents.
+    This is the core RAG guarantee: no hallucinations from outside the retrieved context.
+    Citation format [Doc N] maps directly to the numbered source cards in the UI.
+    """
+    # Format retrieved snippets as a numbered list for the LLM
+    docs_text = ""
+    for i, match in enumerate(matches, 1):
+        details = match.get("metadata", {})
+        diagnosis = details.get("diagnosis", "Unknown")
+        snippet = details.get("text_snippet", "")
+        docs_text += f"[Doc {i}] ({diagnosis})\n{snippet}\n\n"
+
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are a clinical AI research assistant. "
+                    "Answer the user's query using ONLY the information in the provided documents. "
+                    "Cite sources using [Doc N] after each claim. "
+                    "If the documents do not contain enough information to answer, say so explicitly. "
+                    "Be concise — 3 to 5 sentences."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"Query: {query}\n\nDocuments:\n{docs_text}",
+            },
+        ],
+        temperature=0.2,  # Low temp: factual synthesis, not creative writing
+        max_tokens=300,
+    )
+
+    return response.choices[0].message.content.strip()
 
 
 with st.spinner("Loading AI models and vector database..."):
@@ -59,9 +98,6 @@ query = st.text_input(
     placeholder="e.g., patient presenting with pulmonary nodules and severe coughing..."
 )
 
-# Alpha slider — the core Phase 2 UI addition.
-# Left = pure keyword (BM25), Right = pure semantic (PubMedBERT).
-# Default 0.75: semantic-dominant but BM25 helps with exact medical terms.
 alpha = st.slider(
     "Search mode",
     min_value=0.0,
@@ -69,20 +105,19 @@ alpha = st.slider(
     value=0.75,
     step=0.05,
     help="Semantic: understands meaning and synonyms. Keyword: exact term matching. "
-         "Hybrid blends both — useful when your query contains specific gene names, "
-         "drug names, or technical identifiers."
+         "Hybrid blends both — useful for specific gene names, drug names, or technical identifiers."
 )
-
-col1, col2 = st.columns(2)
-col1.caption(f"← Pure keyword (BM25)  |  alpha = {alpha:.2f}  |  Pure semantic (PubMedBERT) →")
+st.caption(f"← Pure keyword (BM25)  |  alpha = {alpha:.2f}  |  Pure semantic (PubMedBERT) →")
 
 if st.button("Search Literature", type="primary"):
     if query:
+        # Step 1: Hybrid retrieval
         with st.spinner("Searching vector database..."):
-            dense_vec = model.encode(query, show_progress_bar=False).tolist()
-            sparse_vec = bm25.encode_queries(query)
-            hdense, hsparse = hybrid_scale(dense_vec, sparse_vec, alpha)
-
+            hdense, hsparse = hybrid_scale(
+                model.encode(query, show_progress_bar=False).tolist(),
+                bm25.encode_queries(query),
+                alpha,
+            )
             results = index.query(
                 vector=hdense,
                 sparse_vector=hsparse,
@@ -90,21 +125,30 @@ if st.button("Search Literature", type="primary"):
                 include_metadata=True,
             )
 
-        st.subheader("Top Search Results")
         matches = results.get("matches", [])
 
         if not matches:
-            st.warning("No results found. Try adjusting the search mode slider or rephrasing your query.")
+            st.warning("No results found. Try adjusting the search mode or rephrasing your query.")
         else:
-            for match in matches:
+            # Step 2: RAG synthesis
+            with st.spinner("Synthesizing answer with GPT-4o-mini..."):
+                answer = get_rag_answer(query, matches)
+
+            # Display synthesized answer
+            st.subheader("AI Answer")
+            st.success(answer)
+
+            # Display source cards so the user can verify every claim
+            st.subheader("Sources")
+            for i, match in enumerate(matches, 1):
                 details = match.get("metadata", {})
                 diagnosis = details.get("diagnosis", "Unknown")
                 snippet = details.get("text_snippet", "No snippet available.")
                 score = match["score"]
 
                 with st.container():
-                    st.markdown(f"#### Classification: `{diagnosis}`")
-                    st.caption(f"Hybrid Match Score: {score:.4f}  |  alpha = {alpha:.2f}")
+                    st.markdown(f"**[Doc {i}]** `{diagnosis}`")
+                    st.caption(f"Hybrid score: {score:.4f}  |  alpha = {alpha:.2f}")
                     st.info(snippet)
                     st.divider()
     else:
