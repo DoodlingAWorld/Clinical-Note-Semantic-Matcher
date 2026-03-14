@@ -18,7 +18,7 @@ Clinical Discovery Engine — hybrid PubMedBERT + BM25 retrieval with GPT-4o-min
 
 @st.cache_resource
 def load_model():
-    return SentenceTransformer('NeuML/pubmedbert-base-embeddings')
+    return SentenceTransformer('finetuned-pubmedbert')
 
 
 @st.cache_resource

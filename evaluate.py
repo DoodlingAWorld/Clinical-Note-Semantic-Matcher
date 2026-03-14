@@ -18,7 +18,7 @@ load_dotenv()
 
 TOP_K = 10
 INDEX_NAME = "medical-hybrid-search"
-MODEL_NAME = "NeuML/pubmedbert-base-embeddings"
+MODEL_NAME = "finetuned-pubmedbert"
 GOLDEN_DATASET_FILE = "golden_dataset.json"
 BM25_MODEL_FILE = "bm25_model.json"
 ALPHAS_TO_TEST = [1.0, 0.75, 0.5, 0.25]
