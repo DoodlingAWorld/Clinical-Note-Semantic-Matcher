@@ -102,7 +102,7 @@ alpha = st.slider(
     "Search mode",
     min_value=0.0,
     max_value=1.0,
-    value=0.75,
+    value=1.0,
     step=0.05,
     help="Semantic: understands meaning and synonyms. Keyword: exact term matching. "
          "Hybrid blends both — useful for specific gene names, drug names, or technical identifiers."
