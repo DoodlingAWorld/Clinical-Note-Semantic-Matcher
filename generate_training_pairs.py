@@ -36,7 +36,7 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-SAMPLES_PER_CLASS = 40      # 40 per class × 5 classes = 200 pairs total
+SAMPLES_PER_CLASS = 200      # 40 per class × 5 classes = 200 pairs total
 TEXT_CHARS_FOR_LLM = 800    # How much text to show the LLM when generating queries
 DOCUMENT_CHARS = 500        # How much text to store as the "positive" document
 OUTPUT_FILE = "training_pairs.json"
@@ -73,7 +73,7 @@ print(f"\nRows available after excluding {len(eval_ids)} eval IDs: {len(df_avail
 # ---------------------------------------------------------------------------
 sampled = (
     df_available.groupby("diagnosis", group_keys=False)
-    .apply(lambda x: x.sample(min(len(x), SAMPLES_PER_CLASS), random_state=99))
+    .apply(lambda x: x.sample(min(len(x), SAMPLES_PER_CLASS), random_state=7))
 )
 sampled = sampled.reset_index(drop=True)
 print(f"\nSampled {len(sampled)} rows across {sampled['diagnosis'].nunique()} classes")

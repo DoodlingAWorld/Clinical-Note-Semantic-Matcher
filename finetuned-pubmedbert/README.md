@@ -5,68 +5,108 @@ tags:
 - feature-extraction
 - dense
 - generated_from_trainer
-- dataset_size:120
+- dataset_size:600
 - loss:MultipleNegativesRankingLoss
 base_model: NeuML/pubmedbert-base-embeddings
 widget:
-- source_sentence: '"F1 mice lung cancer model with 40% construct transmission efficiency
-    using GEMM-ESC method for accelerated genotype generation."'
+- source_sentence: '"COL8A1 mRNA expression in triple-negative breast cancer patients
+    from a multi-centered study evaluating therapeutic targets."'
   sentences:
-  - Thyroid_Cancer. "Gastric neoplasms containing neuroendocrine carcinoma NEC components
-    are rare malignancieswith highly aggressive behavior and a poor prognosis and
-    include pure NEC and mixed tumors containing NECcomponents We aimed to investigate
-    whether there is a distinct difference in overall survival OS between gastricneoplasms
-    containing NEC components and gastric adenocarcinomaMethods Surgically resected
-    gastric neoplasms containing NEC components n   and gastricadenocarcinomas n   from
-    January  to Decemb
-  - "Thyroid_Cancer. Activation by NaturalPhytochemicals An OverviewConcetta Iside\
-    \ Marika Scafuro  Angela Nebbioso  and Lucia Altucci Department of Precision Medicine\
-    \ University of Campania \x9CLuigi Vanvitelli\x9D Naples ItalySirtuins are class\
-    \ III histone deacetylases whose enzymatic activity is dependent on NADas a cofactor\
-    \ Sirtuins are reported to modulate numerous activities by controlling geneexpression\
-    \ DNA repair metabolism oxidative stress response mitochondrial functionand biogenesis\
-    \ Deregulation of their express"
-  - "Lung_Cancer. \" Furthermore 40% of the F1 mice contained the construct reflecting\
-    \ a very efficient transmission. Compared to the classic approach where many crosses\
-    \ are required to obtain a particular genotype the F1 approach still provides\
-    \ a considerable time gain since it only adds Ë\x9C10 weeks to the chimeric GEMM-ESC\
-    \ approach. In  the GEMM-ESC method performs well on all fronts and can be routinely\
-    \ applied in transgenic facilities to accelerate the generation and adaptation\
-    \ of mouse models. Our GEMM-ESC clo"
-- source_sentence: '"relationship between retrieved lymph node counts and short-term
-    complications after radical surgery in gastric cancer patients at Nanjing Drum
-    Tower Hospital"'
+  - "Colon_Cancer. \x82ammation is an established risk factor for colorectal cancer\
+    \ we and others have shown that colorectal cancerpatients with elevated cysteinyl\
+    \ leukotriene receptor  cyslt2r and 15hydroxyprostaglandin dehydrogenase15pgdh\
+    \ levels exhibit good prognoses however both cyslt2r and 15pgdh which act as tumour\
+    \ suppressorsare often suppressed in colorectal cancer we previously reported\
+    \ that leukotriene c4 ltc4induced differentiationin colon cancer via cyslt2r signalling\
+    \ here we investigated the involvement "
+  - Lung_Cancer. " in thoracoscopic operations Ann Thorac Surg 1996 61 1070 1073 8607658
+    16 McConnell PI Feola GP Meyers RL Methylene blue-stained autologous blood for
+    needle localization and thoracoscopic resection of deep pulmonary nodules J Pediatr
+    Surg 2002 37 1729 1731 12483642 17 Hu J Zhang C Sun L Localization of small pulmonary
+    nodules for videothoracoscopic surgery ANZ J Surg 2006 76 649 651 16813634 18
+    Wicky S Mayor B Cuttat JF Schnyder P CT-guided localizations of pulmonary nodules
+    with methylene blue
+  - "Thyroid_Cancer. breast cancer patients especially those with triple\x91negative\
+    \ breast cancer is still grave More effective therapeutic targets are needed to\
+    \ optimize the clinical management of breast cancer Although collagen type VIII\
+    \ alpha  chain COL8A1 has been shown to be downregulated in BRIP1\x91knockdown\
+    \ breast cancer cells its clinical role in breast cancer remains unknownMethods\
+    \  Gene microarrays and mRNA sequencing data were downloaded and integrated into\
+    \ larger matrices based on various platforms Therefore"
+- source_sentence: '"Recommendations for health surveillance and communication strategies
+    following nuclear accidents like Fukushima and Chernobyl for thyroid cancer patients."'
   sentences:
-  - Colon_Cancer. "  it is well established that retrieved lymph node rln counts were
-    positively correlated with betteroverall survival in gastric cancer gc but little
-    is known about the relationship between rln count and shorttermcomplications after
-    radical surgerymethods a total of  consecutive gc patients between january  and
-    december  at nanjing drumtower hospital were retrospectively analyzed univariate
-    analyses were performed to elucidate the associationbetween rln count and postoperative
-    complications we f
-  - Thyroid_Cancer. Creative Commons AttributionLicense which permits unrestricted
-    use distribution and reproduction in any medium provided the original work isproperly
-    citedCutaneous metastases are unusual presenting symptoms of lung cancer erefore
-    they are prone to be misdiagnosed and missede report describes a case of a fortynineyearold
-    female with painful zosteriform rashes showing multiple vesiclelike papuleslocalized
-    on the left breast for  days e patient had been diagnosed as lung adenocarcinoma
-    at the depar
-  - Colon_Cancer. ] we have filtered only research  s  published  in  english  language  and  selected  the
-    following keywords air pollution and covid19 or sarscov2 particulate matter or
-    pm and covid19 or sarscov2 nitrogen dioxide or no2 and covid19 or sarscov2 we  choose  as  inclusion  criteria  all  the  available  epidemiological
-    studies aimed to identify any temporal and spatial association between reported
-    covid19 cases andor deaths and air pollution data related to pm25 pm10 and no2
-    thus excluding any lett
-- source_sentence: '"biochemical analysis of folk medicinal plants from arid Balochistan,
-    focusing on Fagonia indica and Tribulus pentandrus activities"'
+  - Thyroid_Cancer. "researchWhat are the implications of using individual and combined
+    sources of routinely collected data to identify and characterise incident site
+    specific cancers a concordance and validation study using linked English electronic
+    health records dataHelen Strongman       Rachael Williams2 Krishnan Bhaskaran1To
+    cite Strongman a0H Williams a0R Bhaskaran a0K  What are the implications of using
+    individual and combined sources of routinely collected data to identify and characterise
+    incident site spe
+  - Thyroid_Cancer. "Handling EditorAdrian CovaciKeywordsNuclear accidentsHealth surveillancePreparednessCommunicationStakeholdersRecommendationsSerious
+    accidents at nuclear power plants have been rare but theirstories can teach us
+    how to prevent or mitigate the eï¬ects of futurenuclear catastrophes The accidents
+    at the Fukushima Daiichi nuclearpower plant and Chernobyl nuclear power plant
+    occurred  years and years ago respectively and there are still lessons to learn
+    from themregarding numerous issues including ra
+  - "Colon_Cancer. ulcerative colitis is a type of \x82ammatory bowel disease thatcan\
+    \ potentially lead to cancer e age of onset of colitis istypically \x93 years\
+    \ old and it can seriously threaten thequality of life of patients   e immunopathogenesis\
+    \ andimmunosuppressive treatment of colitis are currently theresearch topics of\
+    \ significant interest e research goals areto diagnose and treat colitis in order\
+    \ to prevent exacerbationof the disease   e drugs used to treat colitis in the\
+    \ clinicoften have adverse eï¬ects after t"
+- source_sentence: '"lung squamous cell cancer mir2143p expression correlation with
+    yes-associated protein1 and patient survival outcomes"'
   sentences:
-  - Lung_Cancer. "One limitation of this study is the small number of cases under
-    study although 15 FISH-positive cases is comparable to most other studies. The
-    relatively small number of FISH-negative cases may have affected our ability to
-    identify FISH-negative IHC-positive cases. However the study design does permit
-    an assessment of the sensitivity of the IHC assay which is the most important
-    consideration for a possible screening test. Our comparison of the immunohistochemical
-    assays was not directly equival
+  - "Thyroid_Cancer. RUFYs a Family of EffectorProteins Involved in IntracellularTrafï¬\x81\
+    cking and CytoskeletonDynamicsRmy Char1 and Philippe Pierre123 Aix Marseille Universit\
+    \ Centre National de la Recherche Scientiï¬\x81que Institut National de la Sant\
+    \ et de la RechercheMdicale Centre d\x99Immunologie de MarseilleLuminy Marseille\
+    \ France  Institute for Research in Biomedicine and IlidioPinho Foundation Department\
+    \ of Medical Sciences University of Aveiro Aveiro Portugal  Shanghai Instituteof\
+    \ Immunology School of Medicine Sh"
+  - Colon_Cancer. "the kinetics and localization of the reactions of metabolism are
+    coordinated by the enzymes that catalyze themthese enzymes are controlled via
+    a myriad of mechanisms including inhibitionactivation by metabolitescompartmentalization
+    thermodynamics and nutrient sensingbased transcriptional or posttranslational
+    regulationall of which are influenced as a network by the activities of metabolic
+    enzymes and have downstream potential toexert direct or indirect control over
+    protein abundances considerin
+  - Colon_Cancer.     emerging evidence reveals that micrornas mirnas play a crucial
+    role in tumor progression but the underlying mechanism of micrornas in lung squamous
+    cell cancer lscc remains unclearmethod  westernblotting and quantitative realtime
+    pcr qpcr were carried out to detect mrna and protein expression cell proliferation
+    was evaluated by cell counting kit8 cck8 colonyforming assay or sphereforming
+    assay respectivelyresults  mir2143p was markedly deregulated in lscc tissues and
+    was inversely related to
+- source_sentence: '"linked English electronic health data study on incident colon
+    cancer diagnosis and predictive values from 2010 to 2020"'
+  sentences:
+  - "Colon_Cancer. the european commission asked efsa for a scientiï¬\x81c opinion\
+    \ on the risks for animal and humanhealth related to the presence of glycoalkaloids\
+    \ gas in feed and food this risk assessment coversedible parts of potato plants\
+    \ and other food plants containing gastomato andaubergine in humans acute toxic\
+    \ effects of potato gas asolanine and achaconine includegastrointestinal symptoms\
+    \ such as nausea vomiting and diarrhoea for these effects the contampanel identiï¬\x81\
+    ed a lowestobservedadverseeffect level o"
+  - 'Lung_Cancer. "or paclitaxel (200 mg/m2)/carboplatin (area under the curve 6.0)
+    on day 1 every 3 weeks. Chemotherapy was continued for at least three cycles.
+    Gefitinib was administered until the disease progressed intolerable toxicities
+    developed or consent was withdrawn. The protocol recommended that the crossover
+    regimen be used as a second-line treatment. Clinical Assessments The antitumor
+    response to treatment was assessed using computed tomography every 2 months. Unidirectional
+    measurements were adopted '
+  - 'Colon_Cancer. "objectives  to describe the benefits and limitations of using
+    individual and combinations of linked english electronic health data to identify
+    incident cancersdesign and setting  our descriptive study uses linked english
+    clinical practice research datalink primary care cancer registration hospitalisation
+    and death registration dataparticipants and measures  we implemented case definitions
+    to identify first site specific cancers at the  most common sites based on the
+    first ever cancer diagnosis '
+- source_sentence: '"lbx2as1 expression analysis in lower grade glioma and glioblastoma
+    multiforme using TCGA and GTEx data"'
+  sentences:
   - Colon_Cancer. the recent focus is on the analysis of biological activities of
     extracts from thirteen folk medicinal plants from arid and semiarid zones of balochistan
     pakistan only a small proportionof them have been scientifically analyzed therefore
@@ -74,61 +114,20 @@ widget:
     plant parts superoxide dismutase wasdetected maximum in fagonia indica ± unitsg
     ascorbate peroxidase in tribulus pentandrus ± unitsg catalase and peroxidase were
     higher in pega
-  - Lung_Cancer. "The limitations of available data for cost effectiveness analysis
-    are currently unknown so we are taking a practical approach in conducting an exploratory/pilot
-    costing analysis as the first step. Recruitment for qualitative interviews is
-    always challenging but we have identified a lead key informant at each site who
-    will identify and link us with various health professionals and staff to achieve
-    interviews. Interviews will be conducted with health professionals in various
-    professional roles bo
-- source_sentence: '"Patient 2 with left upper-lobe lung cancer lesion 60mm diameter
-    shows poor correlation between tumor and diaphragmatic motion."'
-  sentences:
-  - "Thyroid_Cancer. Genomics Score Based onGenomeWide Network Analysis forPrediction\
-    \ of Survival in GastricCancer A Novel PrognosticSignatureZepang Sun  Hao Chen \
-    \ Zhen Han  Weicai Huang Yanfeng Hu Mingli Zhao Tian LinJiang Yu Hao Liu Yuming\
-    \ Jiang and Guoxin LiDepartment of General Surgery Nanfang Hospital Southern Medical\
-    \ University Guangzhou ChinaGCPurpose Gastric canceris a product of multiple genetic\
-    \ abnormalitiesincluding genetic and epigenetic modiï¬\x81cations This study aimed\
-    \ to integrate variousbiomolecules su"
-  - Lung_Cancer. "tumor motion was well correlated with diaphragmatic motion. In the
-    case of Patient 2 (left upper-lobe lesion ~60?mm diameter) tumor motion was poorly
-    correlated with diaphragmatic motion. Furthermore the motion of the tumor centroid
-    was poorly correlated with the motion of individual points on the tumor boundary
-    indicating significant rotation and/or deformation. These studies indicate that
-    image quality and acquisition speed of cine-2D MRI were adequate for motion monitoring.
-    However significa
-  - 'Colon_Cancer. "  while the impact of family caregiving has been welldocumented
-    many of such studies center oninvestigating external factors such as socioeconomic
-    status accessibility to resources and availability of socialsupport as the primary
-    causation of caregiver wellbeing outcomes this paper explores the motivations
-    that drivefamily caregivers in supporting their family members at the endoflife
-    and critically examines how internalappraisal processes of such motivations can
-    both positively and negatively '
-- source_sentence: Cowden's syndrome in a patient with thyroid carcinoma and associated
-    mucocutaneous lesions, macrocephaly, and cognitive impairment.
-  sentences:
-  - "Lung_Cancer. \"Data from the Colorado Plateau uranium miners cohort. Interestingly\
-    \ even though model 8 is produced from the flexible definition in (5)\x93(7) Figures\
-    \ 2 and 3 suggest that the assumption of independency holds here with shapes of\
-    \ the exposure-response and lag-response curves at different values of ?p and\
-    \ xp respectively being proportional and the maximum HR constantly experienced\
-    \ at lag 11. This result reinforces the fact that the cross-basis representation\
-    \ based on a truly bivariate exposure\x93lag\x93r"
-  - Colon_Cancer. " micrornas mirnas have been reported to have important regulatory
-    roles in the progression of several types of cancer including cervical cancer
-    cc however the biological roles and regulatory mechanisms of mirnas in cc remain
-    to be fully elucidated the aim of the present study was to examine the functions
-    of mirnas in cc and the possible mechanisms using a microarray it was identified
-    that mirna15a5p mir15a5p was one of the most downregulated mirnas in cc tissues
-    compared with adjacent noncancer
-  - "Thyroid_Cancer. \"Cowden\x99s syndrome is an autosomal dominant disease with\
-    \ variable penetrance involving the tumorsuppressor phosphatase and tension homolog\
-    \ gene located on chromosome 10q2223 responsible for cellproliferation migration\
-    \ and cellular apoptosis Its clinical presentation encompasses mucocutaneous lesions\
-    \ whichare present around  of the time macrocephaly and cognitive impairment and\
-    \ it precedes the appearance ofneoplasms such as thyroid carcinoma breast cancer\
-    \ among othersIn addition to these malforma"
+  - Colon_Cancer. "  although rnabinding proteins play an essential role in a variety
+    of different tumours there are stilllimited efforts made to systematically analyse
+    the role of rnabinding proteins rbps in the survival of colorectalcancer crc patientsmethods
+    analysis of crc transcriptome data collected from the tcga database was conducted
+    and rbps wereextracted from crc r software was applied to analyse the differentially
+    expressed genes degs of rbps to identifyrelated pathways and perform functional
+    annotatio
+  - Colon_Cancer.     dysregulation of lncrnas is frequent in glioma and has emerged
+    as an important mechanism involved in tumorigenesis previous analysis of chinese
+    glioma genome atlas cgga database indicated that lbx2as1 expression is one of
+    differentially expression lncrna between lower grade glioma lgg grade ii and iii
+    and glioblastoma multiforme gbm however the function and mechanism of lbx2as1
+    in glioma has not been evaluated yetmethods  here we analyzed the expression of
+    lbx2as1 in gtex data normal brain t
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
@@ -182,9 +181,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    "Cowden's syndrome in a patient with thyroid carcinoma and associated mucocutaneous lesions, macrocephaly, and cognitive impairment.",
-    'Thyroid_Cancer. "Cowden\x99s syndrome is an autosomal dominant disease with variable penetrance involving the tumorsuppressor phosphatase and tension homolog gene located on chromosome 10q2223 responsible for cellproliferation migration and cellular apoptosis Its clinical presentation encompasses mucocutaneous lesions whichare present around  of the time macrocephaly and cognitive impairment and it precedes the appearance ofneoplasms such as thyroid carcinoma breast cancer among othersIn addition to these malforma',
-    'Lung_Cancer. "Data from the Colorado Plateau uranium miners cohort. Interestingly even though model 8 is produced from the flexible definition in (5)\x93(7) Figures 2 and 3 suggest that the assumption of independency holds here with shapes of the exposure-response and lag-response curves at different values of ?p and xp respectively being proportional and the maximum HR constantly experienced at lag 11. This result reinforces the fact that the cross-basis representation based on a truly bivariate exposure\x93lag\x93r',
+    '"lbx2as1 expression analysis in lower grade glioma and glioblastoma multiforme using TCGA and GTEx data"',
+    'Colon_Cancer.     dysregulation of lncrnas is frequent in glioma and has emerged as an important mechanism involved in tumorigenesis previous analysis of chinese glioma genome atlas cgga database indicated that lbx2as1 expression is one of differentially expression lncrna between lower grade glioma lgg grade ii and iii and glioblastoma multiforme gbm however the function and mechanism of lbx2as1 in glioma has not been evaluated yetmethods  here we analyzed the expression of lbx2as1 in gtex data normal brain t',
+    'Colon_Cancer. "  although rnabinding proteins play an essential role in a variety of different tumours there are stilllimited efforts made to systematically analyse the role of rnabinding proteins rbps in the survival of colorectalcancer crc patientsmethods analysis of crc transcriptome data collected from the tcga database was conducted and rbps wereextracted from crc r software was applied to analyse the differentially expressed genes degs of rbps to identifyrelated pathways and perform functional annotatio',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -193,9 +192,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[ 1.0000,  0.7021, -0.0136],
-#         [ 0.7021,  1.0000,  0.0309],
-#         [-0.0136,  0.0309,  1.0000]])
+# tensor([[1.0000, 0.8106, 0.0538],
+#         [0.8106, 1.0000, 0.0740],
+#         [0.0538, 0.0740, 1.0000]])
 ```
 
 <!--
@@ -240,19 +239,19 @@ You can finetune this model on your own dataset.
 
 #### Unnamed Dataset
 
-* Size: 120 training samples
+* Size: 600 training samples
 * Columns: <code>sentence_0</code> and <code>sentence_1</code>
-* Approximate statistics based on the first 120 samples:
+* Approximate statistics based on the first 600 samples:
   |         | sentence_0                                                                        | sentence_1                                                                           |
   |:--------|:----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
   | type    | string                                                                            | string                                                                               |
-  | details | <ul><li>min: 17 tokens</li><li>mean: 25.6 tokens</li><li>max: 36 tokens</li></ul> | <ul><li>min: 81 tokens</li><li>mean: 102.42 tokens</li><li>max: 216 tokens</li></ul> |
+  | details | <ul><li>min: 15 tokens</li><li>mean: 24.5 tokens</li><li>max: 35 tokens</li></ul> | <ul><li>min: 77 tokens</li><li>mean: 102.16 tokens</li><li>max: 267 tokens</li></ul> |
 * Samples:
-  | sentence_0                                                                                                                                       | sentence_1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-  |:-------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  | <code>"VEGF inhibitors impact on anaemia management in lung cancer patients with hypertension during cisplatin and pemetrexed treatment."</code> | <code>Lung_Cancer. "However as in the phase I study a stabilisation of median haemoglobin values for multiple cycles as well as low rate of all-grade anaemia was observed. The result provides some support for the hypothesis that VEGF is a negative regulator of erythropoiesis and its inhibitors may have a role in the management of anaemia. The toxicity profile of this trial was consistent with published data on cisplatin plus pemetrexed and with the known effects of ziv-aflibercept with the exception of a higher th</code>    |
-  | <code>"recurrence rate of logic pairwise and triplet combinations in lung cancer study with zero FDR values"</code>                              | <code>Lung_Cancer. "Both FDR values for discovered pairwise and triplet combinations were zero therefore all of the discovered logic pairwise and triplet combinations were not generated by chance and all of them might represent real associations. In addition we calculated the recurrence rate of discovered logic pairwise and triplet combinations among all random trials. The logic relationships with the recurrence rate larger than were considered as the relationships which were independent of the specimens selected.</code>    |
-  | <code>"UK BioBank thyroid cancer study identifying ultrarare genetic variants in 500,000 individuals with cancer predisposition"</code>          | <code>Thyroid_Cancer.  expanding cancer predisposition genes with ultrarare cancerexclusive human variationsRoni Rasnic1 nathan Linial1  Michal Linial2It is estimated that up to  of cancer incidents are attributed to inherited genetic alterations Despite extensive research there are still gaps in our understanding of genetic predisposition to cancer It was theorized that ultrarare variants partially account for the missing heritable component We harness the UK BioBank dataset of   individuals  of which were diagnos</code> |
+  | sentence_0                                                                                                                         | sentence_1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  |:-----------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | <code>"EGFR and KRAS quality assurance schemes in pathology for lung cancer at J Clin Pathol 2011 by Nederlof et al."</code>       | <code>Lung_Cancer. "E Nederlof P van Noesel C Prinsen CF Scheidel K van de Ven PM de Weger R Schuuring E Ligtenberg M 2011 EGFR and KRAS quality assurance schemes in pathology: generating normative data for molecular predictive marker analysis in targeted therapy J Clin Pathol 64 884 892 21947301 van Krieken JH Normanno N Blackhall F Boone E Botti G Carneiro F Celik I Ciardiello F Cree IA Deans ZC Edsjo A Groenen PJ Kamarainen O Kreipe HH Ligtenberg MJ Marchetti A Murray S Opdam FJ Patterson SD Patton S Pinto C Ro</code> |
+  | <code>"Phase II study NCT00794417 lung cancer treatment with ziv-aflibercept, pemetrexed, and cisplatin every 21 days"</code>      | <code>Lung_Cancer. "The protocol was approved by the Institutional Review Boards at each participating institution. Informed consent was obtained from each patient. Study design This is a single arm open label multicentre phase II study (ClinicalTrials.gov identifier: NCT00794417). Patients received the three-drug combination intravenously on day 1 of every 21 days with ziv-aflibercept (6?mg?kg?1) first followed by pemetrexed (500?mg?m?2) and cisplatin (75?mg?m?2). Premedications consisted of folic acid vitamin B1</code> |
+  | <code>"F1 mice lung cancer model efficiency statistics and GEMM-ESC method details from the European Mouse Mutant Archive."</code> | <code>Lung_Cancer. " Furthermore 40% of the F1 mice contained the construct reflecting a very efficient transmission. Compared to the classic approach where many crosses are required to obtain a particular genotype the F1 approach still provides a considerable time gain since it only adds Ë10 weeks to the chimeric GEMM-ESC approach. In  the GEMM-ESC method performs well on all fronts and can be routinely applied in transgenic facilities to accelerate the generation and adaptation of mouse models. Our GEMM-ESC clo</code> |
 * Loss: [<code>MultipleNegativesRankingLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#multiplenegativesrankingloss) with these parameters:
   ```json
   {
